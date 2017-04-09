@@ -8,7 +8,7 @@ BChords = {
  a1
  fis1:m
  fis1:m
- fis1:m
+ a1
  b1
  cis2:m a2 % with G in bass
  e1

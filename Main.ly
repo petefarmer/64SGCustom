@@ -1,8 +1,14 @@
 % 64 SG Custom
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
-\include "Achords.ly"
-\include "AchordsRefrain.ly"
+\include "AChords.ly"
+\include "AChordsRefrain.ly"
+\include "ALeadGuitar.ly"
+\include "BLeadGuitar.ly"
+\include "ALeadGuitarRefrain.ly"
+\include "ABass.ly"
+\include "BBass.ly"
+\include "ABassRefrain.ly"
 \include "BChords.ly"
 \include "BChordsCoda.ly"
 \include "ABeats.ly"
@@ -14,7 +20,7 @@
 
 \book {
  \header {
-  title = "64 SG Custom"
+  title = "64 SG Custom 3"
   subtitle = "DRAFT"
   subsubtitle = "v0.1"
   composer = "John Jorgenson"
@@ -57,10 +63,10 @@
    \AChords
    \BChords
    \AChordsRefrain
-   \BChords
-   \CChords
-   \AChordsRefrain
-   \BChordsCoda
+%   \BChords
+%   \CChords
+%   \AChordsRefrain
+%   \BChordsCoda
   }
 
 %\unfoldRepeats
@@ -79,13 +85,13 @@
     #'() % beamExceptions
    \time 4/4
    \tempo 4 = 100
-   \ABeats
-   \BBeats
-   \ABeatsRefrain
-   \BBeats
-   \CBeats
-   \ABeatsRefrain
-   \BBeatsCoda
+%   \ABeats
+%   \BBeats
+%   \ABeatsRefrain
+%   \BBeats
+%   \CBeats
+%   \ABeatsRefrain
+%   \BBeatsCoda
   }
 
 
@@ -93,15 +99,20 @@
    instrumentName = \markup {\column {"Lead" \line {"Guitar"}}}
    \clef "treble_8"
   }{
-%   \IntroLeadGuitar
-%   \SectionALeadGuitar
-%   \SectionBLeadGuitar
+   \key e \major
+   \ALeadGuitar
+   \BLeadGuitar
+   \ALeadGuitarRefrain
   }
+
 
   \new Staff {
    \set Staff.instrumentName = #"Bass" 
    \clef "bass"
-%   \SectionABass
+   \key e \major
+   \ABass
+   \BBass
+   \ABassRefrain
   }
 
  >> % StaffGroup
