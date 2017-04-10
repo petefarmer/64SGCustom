@@ -1,11 +1,14 @@
 % 64 SG Custom
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
+\include "flamenco.ly"
 \include "AChords.ly"
 \include "AChordsRefrain.ly"
 \include "ALeadGuitar.ly"
 \include "BLeadGuitar.ly"
 \include "ALeadGuitarRefrain.ly"
+\include "ARhythmGuitar.ly"
+\include "BRhythmGuitar.ly"
 \include "ABass.ly"
 \include "BBass.ly"
 \include "ABassRefrain.ly"
@@ -71,7 +74,7 @@
 
 %\unfoldRepeats
  \new StaffGroup <<
-
+%{
   \new RhythmicStaff \with {
    \consists "Pitch_squash_engraver"
 %   squashedPostion = #0
@@ -93,7 +96,7 @@
 %   \ABeatsRefrain
 %   \BBeatsCoda
   }
-
+%}
 
   \new Staff \with {
    instrumentName = \markup {\column {"Lead" \line {"Guitar"}}}
@@ -103,6 +106,22 @@
    \ALeadGuitar
    \BLeadGuitar
    \ALeadGuitarRefrain
+  }
+
+  \new Staff \with {
+   instrumentName = \markup {\column {"Rhythm" \line {"Guitar"}}}
+   \clef "treble_8"
+  }{
+   \tempo 4 = 100
+   \key e \major
+   \overrideTimeSignatureSettings
+    4/4 % timeSignatureFraction
+    1/8 % baseMomentFraction
+    #'(3 3 2) % beatStructure
+    #'() % beamExceptions
+   \time #'(3 3 2) 4/4
+   \ARhythmGuitar
+   \BRhythmGuitar
   }
 
 
