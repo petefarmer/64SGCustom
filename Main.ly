@@ -7,6 +7,7 @@
 \include "ALeadGuitar.ly"
 \include "BLeadGuitar.ly"
 \include "ALeadGuitarRefrain.ly"
+\include "BLeadGuitarRefrain.ly"   
 \include "ARhythmGuitar.ly"
 \include "BRhythmGuitar.ly"
 \include "ABass.ly"
@@ -25,7 +26,7 @@
  \header {
   title = "64 SG Custom 3"
   subtitle = "DRAFT"
-  subsubtitle = "v0.1"
+  subsubtitle = "v0.2.1"
   composer = "John Jorgenson"
   copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
  }
@@ -66,10 +67,10 @@
    \AChords
    \BChords
    \AChordsRefrain
-%   \BChords
-%   \CChords
-%   \AChordsRefrain
-%   \BChordsCoda
+   \BChords
+   \CChords
+   \AChordsRefrain
+   \BChordsCoda
   }
 
 %\unfoldRepeats
@@ -106,6 +107,7 @@
    \ALeadGuitar
    \BLeadGuitar
    \ALeadGuitarRefrain
+   \BLeadGuitarRefrain
   }
 
   \new Staff \with {
@@ -132,6 +134,8 @@
    \ABass
    \BBass
    \ABassRefrain
+    \BBass
+
   }
 
  >> % StaffGroup
