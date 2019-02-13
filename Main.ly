@@ -1,13 +1,14 @@
 % 64 SG Custom
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
-\include "flamenco.ly"
+\include "flamenco.ly"       
 \include "AChords.ly"
 \include "AChordsRefrain.ly"
 \include "ALeadGuitar.ly"
 \include "BLeadGuitar.ly"
+\include "CLeadGuitar.ly" 
 \include "ALeadGuitarRefrain.ly"
-\include "BLeadGuitarRefrain.ly"   
+\include "BLeadGuitarRefrain.ly"      
 \include "ARhythmGuitar.ly"
 \include "BRhythmGuitar.ly"
 \include "ABass.ly"
@@ -108,6 +109,7 @@
    \BLeadGuitar
    \ALeadGuitarRefrain
    \BLeadGuitarRefrain
+   \CLeadGuitar
   }
 
   \new Staff \with {
@@ -134,7 +136,7 @@
    \ABass
    \BBass
    \ABassRefrain
-    \BBass
+   \BBass
 
   }
 
