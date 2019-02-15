@@ -10,6 +10,10 @@ e''8 \glissando b'16 b'16 b'8 \glissando gis'16 gis'16 gis'8 \glissando fis'16 f
 e'16 dis' b e' dis' b gis' fis' b cis'' b' b dis'' cis'' b dis''
 \ottava #'+1
 e''16 cis'' dis'' e''    fis'' gis'' ais''8      b''  cis''' \tuplet 3/2 { \bendGrace cis'''16  (dis'''8) (cis''') b'' }
-gis''1
+\bendOff
+gis''2 r16 gis''16 ais'' b'' gis'' ais'' \grace  { ais'' (b'') (ais'') } gis'' fis'' 
+dis''16 cis'' b'4. gis'8 b' \arpeggioArrowUp <b' dis'' gis''>16 \arpeggio b'' c''' cis''' ~
+cis'''8.    b''16 ais'' fis'' cis''  ais' \glissando gis' fis'  dis' cis'   \tuplet 6/4 {gis' fis' dis' cis'   ais gis} 
+fis1
 
 }
